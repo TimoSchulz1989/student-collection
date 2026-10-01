@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Collection · BSZ Altmühlfranken</title>
+  <meta name="description" content="Die Student Collection des BSZ Altmühlfranken: Hoodies und T-Shirts mit Motiven von Schülerinnen und Schülern. For students, by students.">
+  <meta name="theme-color" content="#14161c">
+  <meta property="og:title" content="Student Collection · for students, by students">
+  <meta property="og:image" content="img/look/classroom.webp">
+  <link rel="preload" href="fonts/graduate-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a href="#top" class="brand" aria-label="Student Collection – zum Seitenanfang">
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand__text">Student Collection</span>
+      </a>
+      <nav class="topnav" aria-label="Hauptnavigation">
+        <a href="#motive">Motive</a>
+        <a href="#artikel">Preise</a>
+        <a href="#ablauf">Ablauf</a>
+      </nav>
+      <a class="btn btn--small" data-order-link href="#bestellen">Bestellen</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__inner">
+       <div class="hero__text">
+        <p class="eyebrow"><span data-school-name>BSZ Altmühlfranken</span> · <span data-year>2026/27</span></p>
+        <h1 class="hero__title">
+          <span class="hero__line">Student</span>
+          <span class="hero__line hero__line--outline">Collection</span>
+        </h1>
+        <p class="hero__claim">for students <span class="slash">/</span> by students</p>
+        <p class="hero__lead">
+          Unsere Motive kommen nicht aus einer Agentur. Schülerinnen und Schüler haben sie gestaltet.
+          Hier seht ihr alle Motive, Farben und Preise auf einen Blick.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--big" data-order-link href="#bestellen">Jetzt bestellen</a>
+          <a class="btn btn--outline" href="#motive">Motive ansehen</a>
+        </div>
+        <ul class="price-chips" data-price-chips></ul>
+       </div>
+        <figure class="hero__photo">
+          <img src="img/look/classroom.webp" alt="Zwei Schüler*innen in Hoodies der Student Collection vor der Klasse" width="1536" height="1024" fetchpriority="high">
+          <span class="sticker sticker--a">Made by students</span>
+          <span class="sticker sticker--b">Edition 26/27</span>
+        </figure>
+      </div>
+      <div class="stripes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <!-- IDEE -->
+    <section class="idea" id="idee">
+      <div class="wrap idea__inner">
+        <div>
+          <p class="eyebrow">Die Idee</p>
+          <h2 class="section-title">Made in <span class="hl">our</span> classrooms</h2>
+          <p class="idea__text">
+            Die Student Collection ist ein Projekt von Schüler*innen für die ganze Schulfamilie.
+            Jedes Schuljahr können alle Klassen Motive einreichen. Die besten kommen in die Kollektion.
+            Wer sie trägt, zeigt, wo er hingehört, und trägt die Ideen der Leute, die unsere Schule ausmachen.
+          </p>
+        </div>
+        <ul class="stats">
+          <li><span class="stats__num" data-stat="student-motifs">7</span><span class="stats__label">Motive von Schüler*innen</span></li>
+          <li><span class="stats__num" data-stat="products">2</span><span class="stats__label">Artikel</span></li>
+          <li><span class="stats__num" data-stat="colors">3</span><span class="stats__label">Farben</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MOTIVE -->
+    <section class="section section--motifs" id="motive">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">01 · Die Motive</p>
+          <h2 class="section-title">Designed by students</h2>
+          <p class="section-lead">Tippt auf ein Motiv, um es groß zu sehen. Mit den Farbpunkten wechselt ihr die Ansicht, wenn es mehrere Varianten gibt.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Motive nach Farbe filtern" data-filters></div>
+        <div class="motifs" data-motifs></div>
+      </div>
+    </section>
+
+    <!-- ARTIKEL & PREISE -->
+    <section class="section" id="artikel">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">02 · Artikel &amp; Preise</p>
+          <h2 class="section-title">Hoodie oder Shirt?</h2>
+          <p class="section-lead">Jedes Motiv gibt es auf beiden Artikeln. Im Formular wählt ihr Motiv, Artikel, Farbe und Größe.</p>
+        </div>
+        <div class="products" data-products></div>
+      </div>
+    </section>
+
+    <!-- LOOKBOOK -->
+    <section class="section section--tight lookbook-section" aria-labelledby="lookbook-title">
+      <div class="wrap">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow">03 · Lookbook</p>
+            <h2 class="section-title" id="lookbook-title">So sieht's aus</h2>
+          </div>
+          <p class="section-lead">Zum Durchwischen. Antippen vergrößert.</p>
+        </div>
+      </div>
+      <div class="lookbook" data-lookbook></div>
+    </section>
+
+    <!-- ABLAUF -->
+    <section class="section" id="ablauf">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">04 · So funktioniert's</p>
+          <h2 class="section-title">In vier Schritten zum Lieblingsteil</h2>
+        </div>
+        <ol class="steps" data-steps></ol>
+        <p class="deadline-note" data-deadline-note></p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="bestellen">
+      <div class="wrap cta__inner">
+        <div class="cta__text">
+          <p class="eyebrow">Ready?</p>
+          <h2 class="cta__title">Hol dir dein Stück Schule.</h2>
+          <p>Die Bestellung läuft über ein kurzes Microsoft-Formular und dauert keine zwei Minuten.</p>
+          <a class="btn btn--dark btn--big" data-order-link href="#">Zum Bestellformular <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="qr">
+          <div class="qr__code" data-qr role="img" aria-label="QR-Code zum Bestellformular"></div>
+          <figcaption>Mit dem Handy scannen &amp; direkt bestellen</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="stripes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <p class="footer__brand">Student Collection</p>
+        <p class="footer__school" data-school-long>Staatliches Berufliches Schulzentrum Altmühlfranken</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a data-contact-link href="#">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" data-lightbox aria-label="Bildansicht">
+    <button class="lightbox__close" type="button" data-lightbox-close aria-label="Schließen">×</button>
+    <img class="lightbox__img" data-lightbox-img alt="">
+    <p class="lightbox__caption" data-lightbox-caption></p>
+  </dialog>
+
+  <script src="data/collection.js"></script>
+  <script src="js/qrcode.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
