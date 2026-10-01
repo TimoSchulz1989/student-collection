@@ -238,6 +238,28 @@ a { color: inherit; }
 .stats__num { display: block; font-family: var(--font-display); font-size: clamp(2.2rem, 7vw, 3.2rem); line-height: 1; }
 .stats__label { display: block; font-size: .78rem; font-weight: 600; color: var(--ink-soft); margin-top: .45rem; line-height: 1.3; }
 
+/* ---------- Film ---------- */
+.film {
+  background:
+    radial-gradient(circle at 90% 15%, var(--yellow-t) 0 180px, transparent 181px),
+    radial-gradient(circle at 5% 90%, var(--green-t) 0 200px, transparent 201px),
+    var(--red-t);
+}
+.film__inner { display: grid; gap: 2rem; align-items: center; }
+@media (min-width: 900px) { .film__inner { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 4rem; } }
+.film__frame { max-width: 640px; width: 100%; justify-self: center; margin-right: 10px; }
+.film__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 10px 10px 0 var(--blue);
+  transform: rotate(-1deg);
+}
+
 /* ---------- Sektionen ---------- */
 .section { padding: clamp(56px, 9vw, 100px) 0; }
 .section--tight { padding-bottom: clamp(40px, 6vw, 70px); }
